@@ -7,6 +7,7 @@ Just a small experiment on game architecture.
 ## Quick Start
 
 ```console
-$ make
-$ ./3jss
+> set PATH=C:\msys64\mingw32\bin
+> mingw32-make.exe 
+> ./3jss.exe
 ```
