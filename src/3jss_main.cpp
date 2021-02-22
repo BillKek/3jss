@@ -9,14 +9,14 @@ int main(int argc, char *argv[])
     game->window =
         sec(SDL_CreateWindow(
                 "3jss",
-                0, 0,
+                20, 20,
                 SCREEN_WIDTH, SCREEN_HEIGHT,
                 SDL_WINDOW_RESIZABLE));
 
     game->renderer =
         sec(SDL_CreateRenderer(
                 game->window, -1,
-                SDL_RENDERER_ACCELERATED));
+                SDL_RENDERER_ACCELERATED|SDL_RENDERER_PRESENTVSYNC));
 
     sec(SDL_RenderSetLogicalSize(game->renderer,
                 SCREEN_WIDTH,
